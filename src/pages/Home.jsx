@@ -83,7 +83,7 @@ const Home = () => {
 
     try {
 
-      const response = await fetch(`http://127.0.0.1:8000/api/process_preferences/${sessionId}`, {
+      const response = await fetch(`https://travel-backend-app.azurewebsites.net/api/process_preferences/${sessionId}`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
