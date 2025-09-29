@@ -82,7 +82,7 @@ const TripDashboard = () => {
         try {
             console.log("handleFirstSendMessage");
             const sessionId = "demo-session"; // or generate dynamically
-            const response = await fetch(`https://travel-backend-app.azurewebsites.net/api/process_preferences_forFirstSendMessage/${sessionId}`, {
+            const response = await fetch("https://travel-backend-app-d7bmd4caf0agd7aw.canadacentral-01.azurewebsites.net/api/process_preferences_forFirstSendMessage/demo-session",{
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({
@@ -144,7 +144,7 @@ const TripDashboard = () => {
 
         try {
             const sessionId = "demo-session"; // or generate dynamically
-            const response = await fetch(`https://travel-backend-app.azurewebsites.net/api/process_preferences/${sessionId}`, {
+            const response = await fetch("https://travel-backend-app-d7bmd4caf0agd7aw.canadacentral-01.azurewebsites.net/api/process_preferences/demo-session", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({
